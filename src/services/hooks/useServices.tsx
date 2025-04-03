@@ -46,7 +46,7 @@ function useServices() {
 }
 
 async function logs(key: string): Promise<LogDaySummary[]> {
-    const response = await fetch(`https://raw.githubusercontent.com/bamsammich/status w/main/public/status/${key}_report.log`);
+    const response = await fetch(`https://raw.githubusercontent.com/bamsammich/status/main/public/status/${key}_report.log`);
 
     const text = await response.text();
     const lines = text.split("\n");
